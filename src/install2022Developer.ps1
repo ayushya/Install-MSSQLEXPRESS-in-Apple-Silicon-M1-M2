@@ -12,7 +12,7 @@ $expressInstallerPath = "./Temp/SQL$sqlYear-SSEI-Dev.exe"
 $fullInstallerPath = "./Temp/SQLServer$sqlYear-DEV-x64-ENU.exe"
 $setupFolderPath = "./Temp/SQLServer$sqlYear-DEV-x64-ENU"
 $ssmsInstallerPath = "./Temp/SSMS-Setup-ENU.exe"
-$sqlInstallArgs = "/qs /ACTION=Install /FEATURES=SQL /INSTANCENAME=$instanceName /ENU /IACCEPTSQLSERVERLICENSETERMS /SQLSYSADMINACCOUNTS=$user /UPDATEENABLED=false /USEMICROSOFTUPDATE=false"
+$sqlInstallArgs = "/qs /ACTION=Install /FEATURES=SQL /INSTANCENAME=$instanceName /ENU /IACCEPTSQLSERVERLICENSETERMS /SQLSYSADMINACCOUNTS=$user /UPDATEENABLED=false /SQLCOLLATION=SQL_Latin1_General_CP1_CS_AS /USEMICROSOFTUPDATE=false"
 
 $maxDownloadRepeatCount = 5
 $actualInstanceName = $instanceName
